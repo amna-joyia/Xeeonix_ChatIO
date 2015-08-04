@@ -34,7 +34,7 @@ io.sockets.on('connection', function(socket){
 		//Disconnect
 		socket.on('disconnect',function(data){
 		 if(!socket.username) return;
-		 usernames.splice(usernames.indexOf(socket.username), 1); // a funstion to remove a sepcific function from array
+		 usernames.splice(usernames.indexOf(socket.username), 1);
 		 updateUsernames();
 		});
 });
